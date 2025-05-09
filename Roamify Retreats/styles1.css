@@ -1,0 +1,289 @@
+@font-face {
+    font-family: Kamillo;
+    src: url('KamilloGrotesk-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Neomatrix;
+    src: url('NeomatrixCode.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Pathway;
+    src: url('PathwayExtreme-BoldItalic.otf')
+format('opentype');
+
+}
+
+/* html{
+    background-color: azure;
+} */
+
+html{
+    background-image: url(images/background.jpg);
+}
+
+
+table{
+    border-collapse: collapse;
+}
+
+td,th{
+    border: 1px solid black;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.Places {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-direction: row;
+}
+
+.Places > section{
+    
+    border: 1px solid black;
+    flex-grow: 2;
+    flex-basis: 0;
+    border-radius: 10%;
+    width: 48%;
+}
+
+.Places > section > h3{
+    text-align: center;
+}
+
+
+h1{
+    text-align: center;
+}
+
+h1,h2 {
+    color: crimson;
+    font-family: Neomatrix;
+    font-size: x-large;
+}
+
+#Extras h3 i{
+    color: crimson;
+    font-family: Neomatrix;
+    font-size: x-large;
+}
+
+#Package_1 h3 i, #Package_4 h3 i, #Package_5 h3 i, #Package_8 h3 i{
+    color:chocolate;
+    font-family: Pathway;
+}
+
+#Package_2 h3 i, #Package_3 h3 i, #Package_6 h3 i, #Package_7 h3 i{
+    color: cadetblue;
+    font-family: Pathway;
+}
+
+/*For western cultural hub*/
+
+#Package_5 .Places section{
+    flex: 40%;
+    margin: 0;
+    height: auto;
+}
+
+#Package_6 .Places section{
+    flex: 40%;
+    margin: 0;
+    height: auto;
+} 
+
+#West_India{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+#Package_5,#Package_6{
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 10px;
+    flex-wrap: wrap;
+    font-size: medium;
+}
+
+@media screen and (max-width:900px){
+    #West_India{
+        display: block;
+    }
+    #Package_5,Package_6{
+        display: block;
+    }
+    .Places{
+        display: block;
+    }
+    .Places section{
+        display: block;
+        min-width: 100%;
+        font-size: small;
+    }
+
+
+}
+
+/*For western cultural hub*/
+
+
+/*For north east paradise*/
+.NorthEast{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.column{
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+#Navigation{
+    background-color: beige;
+    flex: 1;
+    border: 1px solid black;
+    font-size: small;
+    text-align: center;
+    
+}
+
+#North_East{
+    flex: 4;
+}
+
+.column+#Extras{
+    flex: 1;
+    border: 1px solid black;
+    background-color: beige;
+}
+/*For north east paradise*/
+
+nav li{
+    display: inline-block;
+    text-align: center;
+    font-size: larger;
+    background-color: beige;
+    padding: 15px 25px;
+    font-family: Kamillo;
+
+}
+
+nav li:hover{
+    background-color: darkkhaki;
+    transform: scale(1.3);
+    transition: 0.8s;
+}
+
+li{
+    font-family: Kamillo;
+}
+
+p{
+    font-family: Kamillo;
+    font-size: medium;
+    font-weight: bold;
+    font-style: italic;
+}
+
+article{
+    font-family: Kamillo;
+}
+
+footer{
+    display: inline;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+#Contact{
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+#Hyderabad img{
+    width: 50%;
+}
+
+figcaption{
+    text-align: center;
+}
+
+#Extras h3{
+    text-align: center;
+}
+
+@media screen and (max-width: 800px){
+    .Places section{
+        /* flex: 40%; */
+        display: block;
+    }
+}
+
+@media screen and (max-width: 675px){
+    .Places section{
+        /* flex: 50%; */
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header nav li{
+        display: block;
+    }   
+}
+
+@media screen and (max-width: 1200px){
+    header nav li{
+        display: block;
+    }
+}
+
+
+/*For north east paradise*/
+@media screen and (max-width: 1200px){
+    .NorthEast{
+        display: block;
+    
+    .column nav li{
+        display: block;
+        font-size: medium;
+    }
+    }
+    
+}
+/*For north east paradise*/
+
+@media screen and (min-width:1000px){
+    #Package_1 .Places:hover section,
+    #Package_2 .Places:hover section,
+    #Package_7 .Places section:hover,
+    #Package_8 .Places section:hover
+    {    
+    opacity: 1;
+    }
+
+    #Package_1 .Places section:hover,
+    #Package_2 .Places section:hover,
+    #Package_7 .Places section:hover,
+    #Package_8 .Places section:hover
+    {
+    transform: scale(1.1);
+    background-color: cornsilk;
+    opacity: 1;
+    }
+
+}
